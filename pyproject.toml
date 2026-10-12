@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "restoration"
+version = "0.1.0"
+description = "Classical image denoising from scratch: Perona-Malik anisotropic diffusion (phase 1)."
+requires-python = ">=3.9"
+dependencies = ["numpy", "scipy", "scikit-image", "matplotlib"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,6 +1,6 @@
 import numpy as np
 
-from restoration import g_exp, g_rat
+from src import g_exp, g_rat
 
 
 def test_properties_of_both_conductances():
